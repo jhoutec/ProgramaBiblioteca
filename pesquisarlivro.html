@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="adicionarlivro.html">Adicionar Livro</a></li>
+      <li><a href="emprestarlivro.html">Emprestar Livro</a></li>
+      <li><a href="devolverlivro.html">Devolver Livro</a></li>
+      <li><a href="pesquisarlivro.html">Pesquisar Livro</a></li>
+    </ul>
+  </nav>
+  <h1>Biblioteca</h1>
+  <h2>Pesquisar Livro</h2>
+  <form id="pesquisarLivroForm">
+    <label for="termoPesquisa">Termo de Pesquisa:</label>
+    <input type="text" id="termoPesquisa" required><br>
+    <button type="submit">Pesquisar</button>
+  </form>
+  <h2>Biblioteca</h2>
+  <table id="bibliotecaTable">
+    <caption>Tabela da Biblioteca</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Aluno</th>
+        <th>Turma</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <h2>Resultado da Pesquisa</h2>
+  <div id="resultadoPesquisa"></div>
+  <script src="script.js"></script>
+</body>
+</html>

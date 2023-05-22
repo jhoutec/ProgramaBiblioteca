@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="adicionarlivro.html">Adicionar Livro</a></li>
+      <li><a href="emprestarlivro.html">Emprestar Livro</a></li>
+      <li><a href="devolverlivro.html">Devolver Livro</a></li>
+      <li><a href="pesquisarlivro.html">Pesquisar Livro</a></li>
+      <li><a href="livros.html">Livros</a></li>
+    </ul>
+  </nav>
+  <h1>Biblioteca</h1>
+  <h2>Emprestar Livro</h2>
+  <form id="emprestarLivroForm">
+    <label for="idEmprestar">ID:</label>
+    <input type="text" id="idEmprestar" required><br>
+    <label for="aluno">Aluno:</label>
+    <input type="text" id="aluno" required><br>
+    <label for="turma">Turma:</label>
+    <input type="text" id="turma" required><br>
+    <button type="submit">Emprestar</button>
+  </form>
+  <h2>Livros</h2>
+  <table id="livrosTable">
+    <caption>Tabela de Livros</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
