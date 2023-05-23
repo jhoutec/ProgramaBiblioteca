@@ -278,3 +278,25 @@ document.getElementById("pesquisarLivroForm").addEventListener("submit", pesquis
 
 atualizarTabelaLivros();
 atualizarTabelaBiblioteca();
+
+function login(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+
+  var usernameInput = document.getElementById('username');
+  var passwordInput = document.getElementById('password');
+  var username = usernameInput.value;
+  var password = passwordInput.value;
+
+  // Verifique se o usuário e a senha inseridos correspondem às informações esperadas
+  if (username === 'jhoutec' && password === '123456') {
+    // Redirecione para a página inicial do site
+    window.location.href = 'paginainicial.html';
+  } else {
+    alert('Usuário ou senha incorretos!');
+  }
+
+  // Limpe os campos de usuário e senha após a tentativa de login
+  usernameInput.value = '';
+  passwordInput.value = '';
+}
+
